@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Search</title>
+  <link rel="stylesheet" href="style.css">
+</script>
+</head>
+<body>
+  <div class="homeContainer">
+
+     <div class="nav">
+      <img src="images/loggo-removebg-preview.png" id="logoHome">
+     <a href="index.html"><button id="btnHome">Home</button></a>
+       <div id="rdbtn">
+       </div>
+      </div>
+
+    <h1 id="searchingbooks">VUE Reads</h1>
+    <input type="text" id="searchInput" placeholder="Enter keyword">
+    <button id="searchbtn" onclick="searchBooks()">Search</button>
+    <div id="res">
+  <div id="categories">
+    <h1 id="catTitle">Categories</h1>
+    <div id="subCategories">
+      <h2 onclick="displayBTS()">BTS</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayRomance()">Romance</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayHorror()">Horror</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayMagazines()">Magazines</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayCode()">Code</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayReligious()">Religion</h2>
+    </div>
+  </div>
+  <div id="results"></div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7FW41E6RT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R7FW41E6RT');
+</script>
+</body>
+</html>
